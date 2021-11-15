@@ -1,3 +1,5 @@
+variable_primal(model) = x -> MOI.get(model, MOI.VariablePrimal(), x)
+
 function heuristicCreate(model::Model)
     m = heuristicModel()
     m.model = model
